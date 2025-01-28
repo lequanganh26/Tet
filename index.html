@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng năm mới</title>
+    <link rel="stylesheet" href="./styles.css">
+ 
+</head>
+<body>
+    <canvas id="cas"></canvas>
+    <div id="Merry" class="christmas-message">Chúc mừng năm mới</div>
+    <img class="tree-icon">
+    <audio id="audio" src="./tet.mp3"></audio>
+    <div class="container">
+        <button id="showButton">
+            Thân gửi
+        </button>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+        <button id="closeButton" class="close-btn">X</button>
+        <div class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="image/anhtet.png" alt="line slow">
+            </div>
+            <div class="details">
+                <h4 class="color1"></h2>
+                    <h4 class="color2 margin">Happy New Year Minh Anh</h3>
+                        <p><br></p>
+                        <p> </p>
+                        <p>Chúc em và gia đình có một năm mới,</p>
+                        <p> thật nhiều sức khỏe, vạn sự như ý,</p>
+                        <p> Mua may bán đắt,thuận lợi trong công việc</p>
+                        <p> và có nhiều niềm vui trong cuộc sống.</p>
+                        <p>cầu chúc mọi điều tốt đẹp sẽ đến </p>
+                        <p>với Em trong năm nay!</p>
+                        <p><br></p>
+                        <p class="text-right">Love You</p>
+                    <h5 class="anhbox">
+                        <img src="image/pedri.jpg" alt="line slow">
+                        <img src="image/MinhAnh.jpg" alt="line slow">
+                    </h5>        
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        document.body.addEventListener("click", function() {
+             var audio = document.getElementById("audio");
+             audio.play();
+         });
+     </script>
+</body>
+</html>
